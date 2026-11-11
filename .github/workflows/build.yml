@@ -38,7 +38,7 @@ jobs:
       - name: Build APK
         run: |
           . .venv/bin/activate
-          yes | buildozer android debug
+          yes | yes | buildozer android debug
 
       - name: Save APK
         uses: actions/upload-artifact@v4
